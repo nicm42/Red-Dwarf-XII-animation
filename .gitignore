@@ -1,0 +1,8 @@
+node_modules/
+cypress/fixtures
+cypress/integration/examples
+cypress/plugins
+cypress/screenshots
+cypress/support
+cypress/videos
+/2020-09-06 21.21.06.mov
