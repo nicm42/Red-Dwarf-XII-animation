@@ -6,3 +6,4 @@ cypress/screenshots
 cypress/support
 cypress/videos
 /2020-09-06 21.21.06.mov
+*.map
