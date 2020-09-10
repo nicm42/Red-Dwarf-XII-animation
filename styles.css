@@ -1,2 +1,2 @@
-body{height:100vh;background:#000;display:-ms-grid;display:grid;place-content:center}.name{font-family:Montserrat,sans-serif;font-size:120px;line-height:.8;color:#fff;text-align:center;text-transform:uppercase}.red{color:red}
+body{height:100vh;background:#000;display:-ms-grid;display:grid;place-content:center}main{width:530px;border-radius:50%;padding:20px;box-shadow:0 0 30px 15px purple}.name,main{height:530px}.name{display:-ms-grid;display:grid;place-content:center;font-family:Montserrat,sans-serif;font-size:120px;line-height:.8;color:#fff;text-align:center;text-transform:uppercase}.red{color:red}
 /*# sourceMappingURL=styles.css.map */
