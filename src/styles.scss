@@ -1,3 +1,19 @@
 body {
+  height: 100vh;
   background: black;
+  display: grid;
+  place-content: center;
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120px;
+  line-height: 0.8;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.red {
+  color: red;
 }

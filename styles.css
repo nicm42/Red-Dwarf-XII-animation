@@ -1,2 +1,2 @@
-body{background:#000}
+body{height:100vh;background:#000;display:-ms-grid;display:grid;place-content:center}.name{font-family:Montserrat,sans-serif;font-size:120px;line-height:.8;color:#fff;text-align:center;text-transform:uppercase}.red{color:red}
 /*# sourceMappingURL=styles.css.map */
