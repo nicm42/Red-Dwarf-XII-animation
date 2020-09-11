@@ -50,7 +50,20 @@ main {
 }
 
 .red {
+  position: relative;
   color: red;
+}
+
+.red::after {
+  position: absolute;
+  content: '';
+  background-color: black;
+  left: 35px;
+  top: 54px;
+  width: 32px;
+  height: 39px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .line3 {
