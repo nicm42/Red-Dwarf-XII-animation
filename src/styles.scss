@@ -66,6 +66,22 @@ main {
   border-bottom-right-radius: 50%;
 }
 
+.above {
+  position: relative;
+}
+
+.above::after {
+  position: absolute;
+  content: '';
+  background-color: black;
+  left: 35px;
+  top: 54px;
+  width: 20px;
+  height: 17px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
 .line3 {
   margin-top: 5px;
   margin-left: 170px;
