@@ -94,12 +94,12 @@ main::after {
 }
 
 .line1 {
-  transform: translateX(-200%);
+  transform: translateX(-100vw);
   animation: moveRight 1s linear 500ms forwards;
 }
 
 .line2 {
-  transform: translateX(200%);
+  transform: translateX(100vw);
   animation: moveLeft 1s linear 500ms forwards;
 }
 .red {
@@ -172,6 +172,8 @@ main::after {
   margin-top: 5px;
   margin-left: 95px;
   font-size: 30px;
+  transform: translateY(100vh);
+  animation: moveUp 1s linear 500ms forwards;
 }
 
 .numeral {

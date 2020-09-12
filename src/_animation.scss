@@ -10,6 +10,12 @@
   }
 }
 
+@keyframes moveUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
 @keyframes show {
   to {
     opacity: 1;
