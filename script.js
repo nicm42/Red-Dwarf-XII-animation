@@ -1,2 +1,2 @@
-"use strict";console.log("hello world");
+"use strict";var canvas=document.querySelector("#canvas"),ctx=canvas.getContext("2d");ctx.canvas.width=window.innerWidth,ctx.canvas.height=window.innerHeight;var canvasSize=window.innerWidth*window.innerHeight,stars=canvasSize/1e3;console.log(stars);for(var i=0;i<stars;i++){var xPos=random(2,canvas.width-2),yPos=random(2,canvas.height-2),alpha=random(.5,1),size=random(1,2);ctx.fillStyle="#ffffff",ctx.globalAlpha=alpha,ctx.fillRect(xPos,yPos,size,size)}function random(a,n){return a=Math.ceil(a),n=Math.floor(n),Math.floor(Math.random()*(n-a+1))+a}
 //# sourceMappingURL=script.js.map
