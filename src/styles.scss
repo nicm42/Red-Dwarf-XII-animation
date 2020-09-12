@@ -16,11 +16,12 @@ main {
   box-shadow: 0px 0px 50px 30px rgb(78, 0, 202);
 }
 
-#canvas {
+#canvas,
+#inner-canvas {
   position: absolute;
 }
 
-.ellipse {
+.ellipse-red {
   position: absolute;
   top: 208px;
   left: -36px;
@@ -31,15 +32,19 @@ main {
   transform: rotate(-45deg);
 }
 
-.ellipse::after {
+.ellipse-black {
   position: absolute;
-  content: '';
-  left: 80px;
   top: 10px;
+  left: 80px;
   width: 449px;
   height: 132px;
   background: black;
   border-radius: 370px / 195px;
+}
+
+#inner-canvas {
+  left: 25px;
+  top: 25px;
 }
 
 .name {

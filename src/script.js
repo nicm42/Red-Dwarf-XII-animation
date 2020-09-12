@@ -5,9 +5,8 @@ ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 
 //Add stars to a small fraction of the canvas
-const canvasSize = window.innerWidth * window.innerHeight;
+const canvasSize = ctx.canvas.width * ctx.canvas.height;
 const stars = canvasSize / 1000;
-console.log(stars);
 
 for(let i = 0; i < stars; i++) {
   //Set up random elements
@@ -20,6 +19,31 @@ for(let i = 0; i < stars; i++) {
   ctx.fillStyle = '#ffffff';
   ctx.globalAlpha = alpha;
   ctx.fillRect(xPos, yPos, size, size);
+}
+
+//Set up inner canvas to go on black ellipse
+const innerCanvas = document.querySelector('#inner-canvas');
+const ctxInner = innerCanvas.getContext("2d");
+const positionInfo = document.querySelector('.ellipse-black')
+//Take a bit off to make sure none of the stars go on the red ellipse
+ctxInner.canvas.width = positionInfo.offsetWidth - 50;
+ctxInner.canvas.height = positionInfo.offsetHeight - 50;
+
+//Add stars to a small fraction of the canvas
+const innerCanvasSize = ctxInner.canvas.width * ctxInner.canvas.height;
+const innerStars = innerCanvasSize / 1000;
+
+for (let j = 0; j < innerStars; j++) {
+  //Set up random elements
+  let xPosInner = random(2, innerCanvas.width - 2);
+  let yPosInner = random(2, innerCanvas.height - 2);
+  let alphaInner = random(.5, 1);
+  let sizeInner = random(1, 2);
+
+  //Add stars
+  ctxInner.fillStyle = '#ffffff';
+  ctxInner.globalAlpha = alphaInner;
+  ctxInner.fillRect(xPosInner, yPosInner, sizeInner, sizeInner);
 }
 
 function random(min, max) {
