@@ -15,3 +15,15 @@
     opacity: 1;
   }
 }
+
+@keyframes grow {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes growRotate {
+  to {
+    transform: rotate(-45deg) scale(1);
+  }
+}

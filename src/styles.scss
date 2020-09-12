@@ -24,6 +24,15 @@ main {
 }
 
 .ellipse-red {
+  transform: rotate(-45deg) scale(0);
+  animation: growRotate 1s linear 500ms forwards;
+}
+
+.ellipse-black {
+  transform: scale(0);
+  animation: grow 1s linear 500ms forwards;
+}
+.ellipse-red {
   position: absolute;
   top: 208px;
   left: -36px;
@@ -31,7 +40,7 @@ main {
   height: 153px;
   background: red;
   border-radius: 580px / 180px;
-  transform: rotate(-45deg);
+  //transform: rotate(-45deg);
 }
 
 .ellipse-black {
