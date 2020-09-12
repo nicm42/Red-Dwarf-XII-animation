@@ -1,3 +1,5 @@
+@import "animation";
+
 body {
   width: 100vw;
   height: 100vh;
@@ -60,6 +62,15 @@ main {
   text-transform: uppercase;
 }
 
+.line1 {
+  transform: translateX(-200%);
+  animation: moveRight 1s linear 500ms forwards;
+}
+
+.line2 {
+  transform: translateX(200%);
+  animation: moveLeft 1s linear 500ms forwards;
+}
 .red {
   position: relative;
   color: red;
