@@ -88,6 +88,13 @@ main {
   border-bottom-right-radius: 50%;
 }
 
+.above::after,
+.below::before,
+.below::after {
+  opacity: 0;
+  animation: show 1ms linear 1500ms forwards;
+}
+
 .above {
   position: relative;
 }

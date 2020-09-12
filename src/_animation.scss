@@ -9,3 +9,9 @@
     transform: translateX(0);
   }
 }
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
