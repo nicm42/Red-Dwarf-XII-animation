@@ -38,3 +38,15 @@
     transform: rotate(-45deg) scale(1);
   }
 }
+
+@keyframes tiltRight {
+  to {
+    transform: translateY(0) rotateZ(-45deg);
+  }
+}
+
+@keyframes tiltLeft {
+  to {
+    transform: translateY(0) rotateZ(45deg);
+  }
+}
