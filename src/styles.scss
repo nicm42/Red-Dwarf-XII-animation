@@ -204,53 +204,46 @@ main::after {
              tiltRight 500ms linear 1750ms forwards;
 }
 
-#one::after {
+#one::before,
+#one::after,
+#two::before,
+#two::after {
   position: absolute;
   content: '';
-  bottom: -42px;
-  left: -13px;
   width: 0;
   height: 0;
   border-style: solid;
+  opacity: 0;
+  animation: show 100ms linear 1750ms forwards;
+}
+
+#one::after {
+  bottom: -42px;
+  left: -13px;
   border-width: 0 30px 30px 0;
   border-color: transparent white transparent transparent;
   transform: rotateZ(-10deg);
 }
 
 #two::after {
-  position: absolute;
-  content: '';
   bottom: -40px;
   left: -17px;
-  width: 0;
-  height: 0;
-  border-style: solid;
   border-width: 30px 30px 0 0;
   border-color: white transparent transparent transparent;
   transform: rotateZ(10deg);
 }
 
 #one::before {
-  position: absolute;
-  content: '';
   top: -41px;
   left: -17px;
-  width: 0;
-  height: 0;
-  border-style: solid;
   border-width: 30px 0 0 30px;
   border-color: transparent transparent transparent white;
   transform: rotateZ(-10deg);
 }
 
 #two::before {
-  position: absolute;
-  content: '';
   top: -41px;
   left: -13px;
-  width: 0;
-  height: 0;
-  border-style: solid;
   border-width: 0 0 30px 30px;
   border-color: transparent transparent white transparent;
   transform: rotateZ(10deg);
