@@ -218,33 +218,33 @@ main::after {
 }
 
 #one::after {
-  bottom: -28px;
+  bottom: -35px;
   left: -15px;
-  border-width: 0 30px 13px 0;
+  border-width: 0 30px 21px 0;
   border-color: transparent white transparent transparent;
   //transform: rotateZ(-10deg);
 }
 
 #two::after {
-  bottom: -27px;
+  bottom: -35px;
   left: -15px;
-  border-width: 12px 30px 0 0;
+  border-width: 21px 30px 0 0;
   border-color: white transparent transparent transparent;
   //transform: rotateZ(10deg);
 }
 
 #one::before {
-  top: -27px;
+  top: -35px;
   left: -15px;
-  border-width: 12px 0 0 30px;
+  border-width: 21px 0 0 30px;
   border-color: transparent transparent transparent white;
   //transform: rotateZ(-10deg);
 }
 
 #two::before {
-  top: -27px;
+  top: -35px;
   left: -15px;
-  border-width: 0 0 12px 30px;
+  border-width: 0 0 21px 30px;
   border-color: transparent transparent white transparent;
   //transform: rotateZ(10deg);
 }
