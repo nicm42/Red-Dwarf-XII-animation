@@ -218,33 +218,33 @@ main::after {
 }
 
 #one::after {
-  bottom: -42px;
-  left: -13px;
-  border-width: 0 30px 30px 0;
+  bottom: -28px;
+  left: -15px;
+  border-width: 0 30px 13px 0;
   border-color: transparent white transparent transparent;
-  transform: rotateZ(-10deg);
+  //transform: rotateZ(-10deg);
 }
 
 #two::after {
-  bottom: -40px;
-  left: -17px;
-  border-width: 30px 30px 0 0;
+  bottom: -27px;
+  left: -15px;
+  border-width: 12px 30px 0 0;
   border-color: white transparent transparent transparent;
-  transform: rotateZ(10deg);
+  //transform: rotateZ(10deg);
 }
 
 #one::before {
-  top: -41px;
-  left: -17px;
-  border-width: 30px 0 0 30px;
+  top: -27px;
+  left: -15px;
+  border-width: 12px 0 0 30px;
   border-color: transparent transparent transparent white;
-  transform: rotateZ(-10deg);
+  //transform: rotateZ(-10deg);
 }
 
 #two::before {
-  top: -41px;
-  left: -13px;
-  border-width: 0 0 30px 30px;
+  top: -27px;
+  left: -15px;
+  border-width: 0 0 12px 30px;
   border-color: transparent transparent white transparent;
-  transform: rotateZ(10deg);
+  //transform: rotateZ(10deg);
 }
