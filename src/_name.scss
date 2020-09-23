@@ -1,10 +1,9 @@
 .name {
   position: relative;
-  height: 530px;
+  height: 100%;
   display: grid;
   place-content: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 120px;
   line-height: 0.8;
   color: white;
   text-align: center;
@@ -12,11 +11,13 @@
 }
 
 .line1 {
+  font-size: 120px;
   transform: translateX(-100vw);
   animation: moveRight 1s linear 500ms forwards;
 }
 
 .line2 {
+  font-size: 120px;
   transform: translateX(100vw);
   animation: moveLeft 1s linear 500ms forwards;
 }
