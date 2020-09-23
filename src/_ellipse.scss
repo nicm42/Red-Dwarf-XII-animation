@@ -1,0 +1,34 @@
+.ellipse-red {
+  transform: rotate(-45deg) scale(0);
+  animation: growRotate 1s linear 500ms forwards;
+}
+
+.ellipse-black {
+  transform: scale(0);
+  animation: grow 1s linear 500ms forwards;
+}
+.ellipse-red {
+  position: absolute;
+  top: 208px;
+  left: -36px;
+  width: 618px;
+  height: 153px;
+  background: red;
+  border-radius: 580px / 180px;
+}
+
+.ellipse-black {
+  position: absolute;
+  top: 10px;
+  left: 80px;
+  width: 449px;
+  height: 132px;
+  background: black;
+  border-radius: 370px / 195px;
+}
+
+#inner-canvas {
+  left: 25px;
+  top: 25px;
+}
+

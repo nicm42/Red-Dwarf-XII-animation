@@ -1,0 +1,87 @@
+.name {
+  position: relative;
+  height: 530px;
+  display: grid;
+  place-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120px;
+  line-height: 0.8;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.line1 {
+  transform: translateX(-100vw);
+  animation: moveRight 1s linear 500ms forwards;
+}
+
+.line2 {
+  transform: translateX(100vw);
+  animation: moveLeft 1s linear 500ms forwards;
+}
+.red {
+  position: relative;
+  color: red;
+}
+
+.red::after {
+  position: absolute;
+  content: '';
+  background-color: black;
+  left: 35px;
+  top: 54px;
+  width: 32px;
+  height: 39px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.above::after,
+.below::before,
+.below::after {
+  opacity: 0;
+  animation: show 1ms linear 1500ms forwards;
+}
+
+.above {
+  position: relative;
+}
+
+.above::after {
+  position: absolute;
+  content: '';
+  background-color: black;
+  left: 35px;
+  top: 54px;
+  width: 20px;
+  height: 17px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.below {
+  position: relative;
+}
+
+.below::before,
+.below::after {
+  position: absolute;
+  content: '';
+  background-color: red;
+  width: 10px;
+  height: 56px;
+  transform: rotate(45deg);
+}
+
+//to cover the W
+.below::before {
+  top: 74px;
+  left: 111px;
+}
+
+//to cover the A
+.below::after {
+  top: 15px;
+  left: 169px;
+}
