@@ -1,5 +1,6 @@
 .name {
   position: relative;
+  width: 100%;
   height: 100%;
   display: grid;
   place-content: center;
@@ -11,16 +12,15 @@
 }
 
 .line1 {
-  font-size: 120px;
   transform: translateX(-100vw);
   animation: moveRight 1s linear 500ms forwards;
 }
 
 .line2 {
-  font-size: 120px;
   transform: translateX(100vw);
   animation: moveLeft 1s linear 500ms forwards;
 }
+
 .red {
   position: relative;
   color: red;
@@ -30,10 +30,10 @@
   position: absolute;
   content: '';
   background-color: black;
-  left: 35px;
-  top: 54px;
-  width: 32px;
-  height: 39px;
+  left: 35%;
+  top: 36%;
+  width: 33%;
+  height: 28%;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
@@ -53,10 +53,10 @@
   position: absolute;
   content: '';
   background-color: black;
-  left: 35px;
-  top: 54px;
-  width: 20px;
-  height: 17px;
+  left: 36%;
+  top: 35%;
+  width: 28%;
+  height: 15%;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }

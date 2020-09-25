@@ -51,3 +51,19 @@ function random(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+/* Setting up font size for text */
+//Every 100px the size of main goes up, we want to go up by 20px
+//So we want to know how many multiples of 5px main is from 425px
+//Then adjust font size by that much
+
+const main = document.querySelector('main');
+const mainWidth = main.offsetWidth;
+const line1 = document.querySelector('.line1');
+const line2 = document.querySelector('.line2');
+
+let difference = (mainWidth - 425) / 5;
+let fontSize = 80 + difference;
+
+line1.style.fontSize = fontSize + 'px';
+line2.style.fontSize = fontSize + 'px';

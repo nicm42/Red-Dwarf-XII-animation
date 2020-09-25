@@ -9,3 +9,4 @@ cypress/videos
 *.map
 *.webp
 *.xcf
+*.ods
