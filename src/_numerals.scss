@@ -1,13 +1,11 @@
 .line3 {
-  margin-top: 5px;
-  margin-left: 95px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 .numeral {
   display: inline-block;
-  margin-right: 5px;
-  height: 50px;
-  border: 15px solid white;
   transform: translateY(100vh);
 }
 
@@ -23,7 +21,6 @@
 
 #two {
   position: relative;
-  transform: translateY(100vh);
   transform-origin: top left;
   animation: moveUp 500ms linear 1000ms forwards,
              bob 400ms linear 1700ms forwards,
@@ -32,7 +29,6 @@
 
 #one {
   position: relative;
-  transform: translateY(100vh);
   transform-origin: center center;
   animation: moveUp 500ms linear 1250ms forwards,
              bob 400ms linear 1800ms forwards,
@@ -45,7 +41,6 @@
 #two::after {
   position: absolute;
   content: '';
-  left: -15px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -53,31 +48,109 @@
   animation: show 100ms linear 2500ms forwards;
 }
 
-#one::before,
-#two::before {
-  top: -35px;
-}
-
-#one::after,
-#two::after {
-  bottom: -35px;
-}
-
 #one::before {
-  border-width: 21px 0 0 30px;
   border-color: transparent transparent transparent white;
 }
 #one::after {
-  border-width: 0 30px 21px 0;
   border-color: transparent white transparent transparent;
 }
 
 #two::before {
-  border-width: 0 0 21px 30px;
   border-color: transparent transparent white transparent;
 }
 
 #two::after {
-  border-width: 21px 30px 0 0;
   border-color: white transparent transparent transparent;
+}
+
+@media screen and (orientation:landscape) {
+
+  .numeral {
+    height: 4.5vh;
+    margin-right: 1vh;
+    border: 1.75vh solid white;
+  }
+
+  #one::before,
+  #two::after {
+    left: -1.7vh;
+  }
+
+  #one::after,
+  #two::before {
+    left: -1.7vh;
+  }
+
+  #one::before,
+  #two::before {
+    top: -4.1vh;
+  }
+
+  #one::after,
+  #two::after {
+    bottom: -4.1vh;
+  }
+
+  #one::before {
+    border-width: 2.5vh 0 0 3.5vh;
+  }
+
+  #one::after {
+    border-width: 0 3.5vh 2.5vh 0;
+  }
+
+  #two::before {
+    border-width: 0 0 2.5vh 3.5vh;
+  }
+
+  #two::after {
+    border-width: 2.5vh 3.5vh 0 0;
+  }
+
+}
+
+@media screen and (orientation:portrait) {
+
+  .numeral {
+    height: 4.5vw;
+    margin-right: 1vw;
+    border: 1.75vw solid white;
+  }
+
+  #one::before,
+  #two::after {
+    left: -1.7vw;
+  }
+
+  #one::after,
+  #two::before {
+    left: -1.8vw;
+  }
+
+  #one::before,
+  #two::before {
+    top: -3.9vw;
+  }
+
+  #one::after,
+  #two::after {
+    bottom: -3.9vw;
+  }
+
+  #one::before {
+    border-width: 2.5vw 0 0 3.5vw;
+  }
+
+  #one::after {
+    border-width: 0 3.5vw 2.5vw 0;
+  }
+
+  #two::before {
+    border-width: 0 0 2.5vw 3.5vw;
+  }
+
+  #two::after {
+    border-width: 2.5vw 3.5vw 0 0;
+  }
+
 }
