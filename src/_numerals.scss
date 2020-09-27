@@ -78,7 +78,7 @@
 
   #one::after,
   #two::before {
-    left: -1.7vh;
+    left: -1.75vh;
   }
 
   #one::before,
@@ -151,6 +151,20 @@
 
   #two::after {
     border-width: 2.5vw 3.5vw 0 0;
+  }
+
+}
+
+@media screen and (orientation:landscape) and (max-height: 400px) {
+
+  #one::before,
+  #two::before {
+    top: -3.9vh;
+  }
+
+  #one::after,
+  #two::after {
+    bottom: -3.9vh;
   }
 
 }
