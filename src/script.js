@@ -1,15 +1,32 @@
 function addCanvas() {
   const canvas = document.getElementById('canvas');
+  const canvasWidth = window.innerWidth;
+  const canvasHeight = window.innerHeight;
 
   //In case we're resizing, first remove all the stars
+  removeStars();
+
+  addStars(canvas, canvasWidth, canvasHeight);
+}
+
+function addEllipseCanvas() {
+  const ellipseCanvas = document.getElementById('inner-canvas');
+  const positionInfo = document.querySelector('.ellipse-black')
+  //Take a bit off to make sure none of the stars go on the red ellipse
+  const ellipseCanvasWidth = positionInfo.offsetWidth - 50;
+  const ellipseCanvasHeight = positionInfo.offsetHeight - 50;
+
+  addStars(ellipseCanvas, ellipseCanvasWidth, ellipseCanvasHeight);
+}
+
+function removeStars() {
   const previousStars = document.getElementsByClassName('star');
   while (previousStars.length > 0) {
     previousStars[0].parentNode.removeChild(previousStars[0]);
   }
+}
 
-  const canvasWidth = window.innerWidth;
-  const canvasHeight = window.innerHeight;
-
+function addStars(parentDiv, canvasWidth, canvasHeight) {
   //Add stars to a small fraction of the canvas
   const canvasSize = canvasWidth * canvasHeight;
   const stars = canvasSize / 2000;
@@ -20,13 +37,9 @@ function addCanvas() {
     let alpha = random(.5, 1);
     let size = random(1, 2);
 
-    if(i == 0){
-      console.log(xPos, yPos);
-    }
-
     let star = document.createElement('div');
     star.classList.add('star');
-    canvas.appendChild(star);
+    parentDiv.appendChild(star);
     star.style.backgroundColor = '#ffffff';
     star.style.opacity = alpha;
     star.style.top = yPos + 'px';
@@ -34,8 +47,8 @@ function addCanvas() {
     star.style.width = size + 'px';
     star.style.height = size + 'px';
   }
-}
 
+}
 
 function random(min, max) {
   min = Math.ceil(min);
@@ -61,7 +74,9 @@ function setFontSize() {
 }
 
 addCanvas();
+addEllipseCanvas();
 setFontSize();
 
-window.addEventListener('resize', setFontSize);
 window.addEventListener('resize', addCanvas);
+window.addEventListener('resize', addEllipseCanvas);
+window.addEventListener('resize', setFontSize);
