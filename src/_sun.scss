@@ -4,17 +4,33 @@
   top: 10%;
   border-radius: 50%;
   transform: translateX(-100%);
-  box-shadow: 0px 0px 150px 150px rgb(30, 0, 202);
+}
+
+.sun::before,
+.sun::after {
+  position: absolute;
+  content: '';
+  opacity: 0;
+  left: 0;
+}
+
+.sun::before {
+  top: 10%;
+  border-radius: 50%;
+  transform: translateX(-100%);
+  box-shadow: 0px 0px 150px 150px rgb(138, 117, 255);
+  animation: show 1000ms linear 1000ms forwards,
+             hide 1000ms linear 2000ms forwards;
 }
 
 .sun::after {
-  content: '';
-  position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
   width: 100vw;
-  box-shadow: 0px 0px 150px 50px rgb(30, 0, 202);
+  height: 10px;
+  background: rgb(138, 117, 255);
+  background: linear-gradient(to right, rgba(138, 117, 255, 1) 0%, rgba(30, 0, 202, 0) 33%, rgba(30, 0, 202, 0) 67%, rgba(30, 0, 202, 1) 100%);
+  animation: show 1000ms linear 1500ms forwards,
+             hide 1000ms linear 2500ms forwards;
 }
 
 @media screen and (orientation:landscape) {
