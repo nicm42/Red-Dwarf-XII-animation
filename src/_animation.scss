@@ -40,6 +40,9 @@
 }
 
 @keyframes tiltRight {
+  from { 
+    transform: translateY(0);
+  }
   to {
     //transform: translateX(15px) translateY(0) rotate(-40deg);
     transform: translateY(0) rotate(-40deg);
@@ -47,6 +50,9 @@
 }
 
 @keyframes tiltLeft {
+  from {
+    transform: translateY(0);
+  }
   to {
     transform: translateY(0) rotate(40deg);
   }
@@ -59,7 +65,7 @@
   50% {
     transform: translateY(10px);
   }
-  100% {
+  100% {  
     transform: translateY(0);
   }
 }
