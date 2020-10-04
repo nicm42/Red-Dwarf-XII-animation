@@ -61,13 +61,16 @@
   border-bottom-right-radius: 50%;
 }
 
-.below {
+/* Turns out we don't need this
+- ellipse is behind all the letters in the animated logo */
+/* .below {
   position: relative;
 }
 
 .below::before,
 .below::after {
   position: absolute;
+  display: block;
   content: '';
   background-color: red;
 }
@@ -76,7 +79,7 @@
 .below::before {
   width: 8%;
   height: 43%;
-  top: 51%;
+  top: 52%;
   left: 43%;
   transform: rotate(47deg);
 }
@@ -89,3 +92,4 @@
   left: 68%;
   transform: rotate(45deg);
 }
+ */

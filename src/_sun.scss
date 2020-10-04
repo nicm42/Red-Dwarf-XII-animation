@@ -8,7 +8,7 @@
 .sun {
   top: 10%;
   border-radius: 50%;
-  box-shadow: 0px 0px 150px 150px $light-blue;
+  box-shadow: 0px 0px 150px 150px rgb(138, 117, 255);
   transform: translateX(-100%);
   animation: show 1000ms linear 1000ms forwards,
              hide 1000ms linear 2000ms forwards;
@@ -19,7 +19,7 @@
   top: 0;
   width: 100vw;
   height: 10px;
-  background: $light-blue;
+  background: rgb(138, 117, 255);
   background: linear-gradient(to right, rgba(138, 117, 255, 1) 0%, rgba(30, 0, 202, 0) 33%, rgba(30, 0, 202, 0) 67%, rgba(30, 0, 202, 1) 100%);
   animation: show 1000ms linear 1500ms forwards,
              hide 1000ms linear 2500ms forwards;

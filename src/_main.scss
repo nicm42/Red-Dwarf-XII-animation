@@ -20,12 +20,12 @@ main::after {
 }
 
 main::before {
-  box-shadow: 0px 0px 150px 60px $blue;
+  box-shadow: 0px 0px 150px 60px rgb(30, 0, 202);
   animation: show 1000ms linear 500ms forwards,
              hide 500ms linear 1500ms forwards;
 }
 main::after {
-  box-shadow: 0px 0px 50px 30px $blue;
+  box-shadow: 0px 0px 50px 30px rgb(30, 0, 202);
   animation: show 1000ms linear 1000ms forwards;
 }
 
