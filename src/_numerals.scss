@@ -74,38 +74,38 @@
 
   #one::before,
   #two::after {
-    left: -1.7vh;
+    left: 0;
   }
 
   #one::after,
   #two::before {
-    left: -1.75vh;
+    left: -0.1vh;
   }
 
   #one::before,
   #two::before {
-    top: -4.1vh;
+    top: -2.1vh;
   }
 
   #one::after,
   #two::after {
-    bottom: -4.1vh;
+    bottom: -2.1vh;
   }
 
   #one::before {
-    border-width: 2.5vh 0 0 3.5vh;
+    border-width: 2.2vh 0 0 2.7vh;
   }
 
   #one::after {
-    border-width: 0 3.5vh 2.5vh 0;
+    border-width: 0 2.7vh 2.2vh 0;
   }
 
   #two::before {
-    border-width: 0 0 2.5vh 3.5vh;
+    border-width: 0 0 2.2vh 2.7vh;
   }
 
   #two::after {
-    border-width: 2.5vh 3.5vh 0 0;
+    border-width: 2.2vh 2.7vh 0 0;
   }
 
 }
@@ -120,38 +120,38 @@
 
   #one::before,
   #two::after {
-    left: -1.7vw;
+    left: 0;
   }
 
   #one::after,
   #two::before {
-    left: -1.8vw;
+    left: -0.1vw;
   }
 
   #one::before,
   #two::before {
-    top: -3.9vw;
+    top: -2.1vw;
   }
 
   #one::after,
   #two::after {
-    bottom: -3.9vw;
+    bottom: -2.1vw;
   }
 
   #one::before {
-    border-width: 2.5vw 0 0 3.5vw;
+    border-width: 2.2vw 0 0 2.7vw;
   }
 
   #one::after {
-    border-width: 0 3.5vw 2.5vw 0;
+    border-width: 0 2.7vw 2.2vw 0;
   }
 
   #two::before {
-    border-width: 0 0 2.5vw 3.5vw;
+    border-width: 0 0 2.2vw 2.7vw;
   }
 
   #two::after {
-    border-width: 2.5vw 3.5vw 0 0;
+    border-width: 2.2vw 2.7vw 0 0;
   }
 
 }
@@ -160,12 +160,12 @@
 
   #one::before,
   #two::before {
-    top: -3.9vh;
+    top: -2.1vh;
   }
 
   #one::after,
   #two::after {
-    bottom: -3.9vh;
+    bottom: -2.1vh;
   }
 
 }

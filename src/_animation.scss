@@ -41,13 +41,13 @@
 
 @keyframes tiltRight {
   to {
-    transform: translateX(15px) translateY(0) rotateZ(-35deg);
+    transform: translateX(15px) rotateZ(-40deg);
   }
 }
 
 @keyframes tiltLeft {
   to {
-    transform: translateY(-1px) rotateZ(35deg);
+    transform: rotateZ(40deg);
   }
 }
 
