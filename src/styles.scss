@@ -1,0 +1,21 @@
+@import "main";
+@import "sun";
+@import "ellipse";
+@import "name";
+@import "numerals";
+@import "animation";
+
+.js-loading {
+  animation-play-state: paused !important;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  display: grid;
+  place-content: center;
+  background: black;
+  overflow: hidden;
+}
