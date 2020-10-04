@@ -76,7 +76,7 @@ function setFontSize() {
   const line2 = document.querySelector('.line2');
 
   let difference = (mainWidth - 425) / 5;
-  let fontSize = 80 + difference;
+  let fontSize = 75 + difference;
 
   line1.style.fontSize = fontSize + 'px';
   line2.style.fontSize = fontSize + 'px';
