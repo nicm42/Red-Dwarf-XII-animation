@@ -70,21 +70,22 @@
   position: absolute;
   content: '';
   background-color: red;
-  transform: rotate(45deg);
 }
 
 //to cover the W
 .below::before {
-  width: 6%;
-  height: 34%;
-  top: 61%;
-  left: 45%;
+  width: 8%;
+  height: 43%;
+  top: 51%;
+  left: 43%;
+  transform: rotate(47deg);
 }
 
 //to cover the A
 .below::after {
-  width: 9%;
+  width: 11%;
   height: 68%;
-  top: 4%;
+  top: 0;
   left: 68%;
+  transform: rotate(45deg);
 }
