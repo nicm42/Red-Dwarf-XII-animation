@@ -6,6 +6,7 @@
 
 .numeral {
   display: inline-block;
+  background-color: white;
   transform: translateY(100vh);
 }
 
@@ -66,9 +67,9 @@
 @media screen and (orientation:landscape) {
 
   .numeral {
-    height: 4.5vh;
+    height: 6.5vh;
+    width: 2.5vh;
     margin-right: 1vh;
-    border: 1.75vh solid white;
   }
 
   #one::before,
@@ -112,9 +113,9 @@
 @media screen and (orientation:portrait) {
 
   .numeral {
-    height: 4.5vw;
+    height: 6.5vw;
+    width: 2.5vw;
     margin-right: 1vw;
-    border: 1.75vw solid white;
   }
 
   #one::before,
