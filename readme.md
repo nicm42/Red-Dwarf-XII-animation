@@ -28,7 +28,7 @@ I wanted to practise animation in CSS. When watching Red Dwarf XII I watched the
 * HTML Canvas
 
 ## Setup
-To view this project visit the [demo](https://red-dwarf-xii.nicm42.co.uk/) or download the files and open index.html
+To view this project visit the [demo](https://reddwarfxii.netlify.app/) or download the files and open index.html
 
 ## Status
 Project is: _finished_
